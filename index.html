@@ -9,29 +9,39 @@
     <script>
       console.log(
         "The Improv Club" + " meets every" + " Tuesday and Thursday" + " in the theater."
-      ); // President: Wayne Brady
+      ) // President: Wayne Brady
       console.log(
         "The Chess Club" + " meets every" + " Monday and Wednesday" + " in Room 123."
-      ); // President: Magnus Carlsen
+      ) // President: Magnus Carlsen
       console.log(
         "The Glee Club" + " meets every" + " Monday, Wednesday, and Friday" + " in Room 321."
-      ); // President: Lea Michele
+      ) // President: Lea Michele
       console.log(
         "The Debate Club" + " will meet" + " every Monday; no Tuesday; no Monday."
-      ); // President: Undecided
+      ) // President: Undecided
       // console.log("ASB will meet...");
       // console.log("The Moth Club will meet...");
       
-      let currentMembers = 8;
-      let totalCapacity = 25;
-      let clubCapacity = currentMembers / totalCapacity;
-      console.log(clubCapacity);
+      let improvMemberCount = 8
+      let chessMemberCount = 16
+      let gleeMemberCount = 22
 
-      console.log(typeof "The Improv Club"); // prints 'string'
-      console.log(typeof 'Monday and Wednesday'); // prints 'string'
-      console.log(typeof 8); // prints 'number'
-      console.log(typeof 8/25); // prints NaN
-      console.log(typeof (8/25)); // prints 'number'
+      improvMemberCount = improvMemberCount + 2 // Reassign value to 2 more
+      gleeMemberCount = gleeMemberCount -= 4 // Reassign value to 4 less
+      console.log(improvMemberCount, chessMemberCount, gleeMemberCount)
+
+      let totalCapacity = 25
+      let clubCapacity = improvMemberCount / totalCapacity;
+      console.log(clubCapacity)
+
+      let isActive = true
+      isActive = false
+
+      console.log(typeof "The Improv Club") // prints 'string'
+      console.log(typeof 'Monday and Wednesday') // prints 'string'
+      console.log(typeof 8) // prints 'number'
+      console.log(typeof 8/25) // prints NaN
+      console.log(typeof (8/25)) // prints 'number'
       console.log(typeof undefined) // prints 'undefined'
     </script>
   </body>
