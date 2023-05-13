@@ -25,24 +25,26 @@
       let improvMemberCount = 8
       let chessMemberCount = 16
       let gleeMemberCount = 22
+      const maxStudentCount = 25
 
-      improvMemberCount = improvMemberCount + 2 // Reassign value to 2 more
-      gleeMemberCount = gleeMemberCount -= 4 // Reassign value to 4 less
-      console.log(improvMemberCount, chessMemberCount, gleeMemberCount)
+      console.log(improvMemberCount)
 
-      let totalCapacity = 25
-      let clubCapacity = improvMemberCount / totalCapacity;
-      console.log(clubCapacity)
+      improvMemberCount += 2
+
+      console.log(improvMemberCount)
+
+      const currentCapacity = improvMemberCount / maxStudentCount * 100
+      console.log(currentCapacity) // evaluates to 32 (32%)
 
       let isActive = true
       isActive = false
 
-      console.log(typeof "The Improv Club") // prints 'string'
-      console.log(typeof 'Monday and Wednesday') // prints 'string'
-      console.log(typeof 8) // prints 'number'
-      console.log(typeof 8/25) // prints NaN
-      console.log(typeof (8/25)) // prints 'number'
-      console.log(typeof undefined) // prints 'undefined'
+      // console.log(typeof "The Improv Club") // prints 'string'
+      // console.log(typeof 'Monday and Wednesday') // prints 'string'
+      // console.log(typeof 8) // prints 'number'
+      // console.log(typeof 8/25) // prints NaN
+      // console.log(typeof (8/25)) // prints 'number'
+      // console.log(typeof undefined) // prints 'undefined'
     </script>
   </body>
 </html>
