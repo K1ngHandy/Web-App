@@ -36,8 +36,12 @@
       const currentCapacity = improvMemberCount / maxStudentCount * 100
       console.log(currentCapacity) // evaluates to 32 (32%)
 
-      let isActive = true
-      isActive = false
+      // improvMemberCount > 20 // true or false depending on if members are > or <= to 20
+
+      let isStudentLoggedIn = true
+      if (isStudentLoggedIn === true) {
+        console.log("Welcome Member!")
+      } // true or false depending on if student is logged in or not
 
       // console.log(typeof "The Improv Club") // prints 'string'
       // console.log(typeof 'Monday and Wednesday') // prints 'string'
